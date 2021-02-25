@@ -32,7 +32,7 @@ pipeline {
 	    agent {
     	    	kubernetes {
       		    cloud 'kubernetes'
-      		    label 'maven-pod'
+      		    label 'master'
       		    yamlFile 'gke/jenkins/maven-pod.yaml'
 		}
 	    }
